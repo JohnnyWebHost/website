@@ -675,6 +675,12 @@ li a:hover {
       
     }
     
+    .particles {
+      
+      z-index:-5;
+      
+    }
+    
     .rizzler {
       height:50px;
       width:50px;
@@ -706,6 +712,80 @@ li a:hover {
       margin-top:10px;
       margin-bottom:10px;
     }
+    
+    body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: #262626;
+}
+.testimonials{
+    margin: 200px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.testimonials .card{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.testimonials .card .content
+{
+    z-index: 2;
+    position: relative;
+}
+.testimonials .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: .7s;
+}
+.testimonials .card:hover .layer{
+    top: 0;
+}
+.testimonials .card .content p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.testimonials .card .content .image{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.testimonials .card .content .details h2{
+    font-size: 18px;
+    color: #fff;
+}
+.testimonials .card .content .details h2 span{
+    color: #03a9f4;
+    font-size: 14px;
+    transition: .7s;
+}
+.testimonials .card:hover .content .details h2 span{
+    color: #fff;
+}
   </style>
   
   <body>
@@ -720,12 +800,68 @@ li a:hover {
   <li><a class="contact"; href="#contact">Contact</a></li>
   <li><a class="about"; href="#about">About</a></li>
      </ul>
+    
+    <div class="testimonials">
 
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Don’t waste the recruiter’s time (Remember, they are reading hundreds of these letters!), when you begin your cover letter, get to the point immediately.</p>
+                <div class="image">
+                    <img src="https://cdn.media.gazeteduvar.com/2016/10/Portre-Çekimi-1.jpg">
+                </div>
+                <div class="details">
+                    <h2>Someone Famous<br><span>Website Designer</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Don’t waste the recruiter’s time (Remember, they are reading hundreds of these letters!), when you begin your cover letter, get to the point immediately.</p>
+                <div class="image">
+                    <img src="http://www.hdfondos.eu/pictures/2012/1014/1/women-blue-eyes-actress-models-rachel-nichols-wallpaper-187997.jpg">
+                </div>
+                <div class="details">
+                    <h2>Someone Famous<br><span>Website Designer</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                <p>Don’t waste the recruiter’s time (Remember, they are reading hundreds of these letters!), when you begin your cover letter, get to the point immediately.</p>
+                <div class="image">
+                    <img src="http://blog.fotopazar.com/wp-content/uploads/2016/12/12.jpg">
+                </div>
+                <div class="details">
+                    <h2>Someone Famous<br><span>Website Designer</span></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- put body before this !-->
 <div id="particles">
-  <div class="overlay"></div>
+  <div class="overlay">
+    
+   
+      
+    </div>
+ 
   
   
-  <head>
+  
+  
+ 
+    
+  </body>
+    
+     <head>
     
     <title>
      TNW Merch | Home
@@ -733,5 +869,4 @@ li a:hover {
     
   </head>
     
-  </body>
 </html>
